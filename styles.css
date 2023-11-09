@@ -30,6 +30,8 @@ body {
 .btn:hover {
   color: #000;
   background-color: #efcb2e;
+  outline: none;
+  border: 2px solid transparent;
 }
 
 /* header part */
@@ -337,7 +339,7 @@ body {
 
 .cont {
   width: 25%;
-  height: 180px;
+  height: 220px;
   padding: 10px;
   border: 2px solid #efcb2e;
 }
@@ -500,7 +502,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   color: white;
 }
 
@@ -622,7 +624,9 @@ footer {
 }
 
 .footer-social-media {
-  text-align: left;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -872,7 +876,7 @@ footer {
 
 .google-map iframe {
   width: 100%;
-  height: 320px;
+  height: 280px;
 }
 
 .contact-form-input {
@@ -965,6 +969,7 @@ footer {
   }
 
   .sol-cont {
+    width: 48%;
     height: 350px;
   }
 
@@ -983,6 +988,22 @@ footer {
 
   .contact-address {
     gap: 20px;
+  }
+
+  .test-img {
+    display: none;
+  }
+
+  .test-review {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    height: 35vh;
+  }
+
+  .mobile-process-container {
+    width: 100%;
   }
 }
 
@@ -1085,22 +1106,10 @@ footer {
     padding: 10px;
   }
 
-  .nav-bar {
-    padding: 20px;
-  }
-
-  .extra-nav-bar {
-    padding: 20px 0;
-  }
-
   .nav-bar .menu-icon,
   .extra-nav-bar .menu-icon {
     display: block;
     font-size: 3rem;
-  }
-
-  .img-back-content {
-    bottom: 30%;
   }
 
   .addon-content {
@@ -1108,194 +1117,46 @@ footer {
     flex-direction: column;
   }
 
-  .add-container {
+  .add-img {
     width: 100%;
   }
 
-  #add-img-hide {
-    display: block;
+  .add-img img {
+    width: 48%;
+    height: 200px;
   }
 
-  .solutions-container {
-    gap: 50px;
-  }
-  .sol-cont {
-    height: 320px;
-  }
-
-  .sol-cont img {
+  .add-img #add-img-hide {
     height: 160px;
   }
 
-  .contact-address {
-    gap: 10px;
-  }
-
-  .contact-address .address {
-    width: 32%;
-    padding: 10px;
-  }
-
-  #process {
-    display: none;
-  }
-  #mob-process {
-    display: block;
-  }
-
-  .test-img img {
-    height: 300px;
-  }
-
-  #review h1 {
-    margin-bottom: 0;
-  }
-
-  .serv-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 580px) {
-  .top-addon h1 {
-    font-size: 3rem;
-  }
   .top-addon p {
     font-size: 10px;
   }
 
-  .add-img {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .add-container {
-    gap: 10px;
-  }
-  .addon-content {
-    margin-top: 20px;
-  }
-  .addon-content img {
-    width: 50%;
-    height: 220px;
-  }
-
-  #add-img-hide {
-    height: 160px;
-  }
-
-  .solutions-container {
-    gap: 10px;
-  }
-
-  .sol-cont {
-    width: 48%;
-  }
-
-  .mobile-process-container {
-    width: 100%;
-  }
-
-  .mobile-process-container .cont {
-    height: 180px;
-  }
-
-  #video-cont {
-    flex-direction: column;
-  }
-
-  .video-content {
-    width: 100%;
-  }
-
-  .video-actual {
-    width: 100%;
-  }
-
-  .review-container {
-    flex-direction: column;
-  }
-
-  .test-review {
-    width: 100%;
-  }
-
-  .test-img {
-    display: none;
-  }
-
-  .container-footer .row {
-    flex-direction: column;
-  }
-
-  .container-footer .row .col-md-2 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .serv-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .h1 {
-    font-size: 2rem;
-  }
   .top-addon h1 {
-    font-size: 2rem;
-  }
-  .top-addon p {
-    font-size: 8px;
-  }
-
-  .add-img {
-    width: 100%;
-    gap: 10px;
+    font-size: 2.5rem;
   }
 
   .add-container {
+    width: 100%;
     flex-direction: column;
-    gap: 10px;
-  }
-
-  .addon-content {
-    margin-top: 20px;
-  }
-
-  .addon-content img {
-    width: 50%;
-    height: 180px;
-  }
-
-  #add-img-hide {
-    height: 140px;
-  }
-
-  .add-cont {
-    height: auto;
   }
 
   .solutions-container {
     flex-direction: column;
-    gap: 20px;
   }
 
   .sol-cont {
     width: 100%;
   }
 
-  .sol-cont img {
-    height: 180px;
-  }
-
   .mobile-process-container {
-    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
 
   .mobile-process-container .cont {
-    height: auto;
+    height: 180px;
   }
 
   #video-cont {
@@ -1308,10 +1169,6 @@ footer {
 
   .video-actual {
     width: 100%;
-  }
-
-  .review-container {
-    flex-direction: column;
   }
 
   .test-review {
@@ -1328,123 +1185,75 @@ footer {
 
   .container-footer .row .col-md-2 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
+
+  /* about media */
 
   .about-intro {
+    padding: 20px;
     flex-direction: column;
-  }
-
-  .about-intro .intro-tag {
-    width: 100%;
-    text-align: left;
   }
 
   .about-intro p {
-    text-align: left;
     width: 100%;
-    margin-top: 20px;
+  }
+
+  .intro-tag {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 15px;
   }
 
   .about-history {
+    padding: 20px;
     flex-direction: column;
-    text-align: left;
-    gap: 20px;
-  }
-
-  .about-history h4 {
-    width: 100%;
+    gap: 15px;
   }
 
   .about-history p {
     width: 100%;
   }
 
-  .about-history .span2 {
-    display: none;
-  }
-
   .about-mission {
+    padding: 20px;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
   }
 
-  .about-mission .mission-container {
+  .mission-container {
     width: 100%;
   }
 
-  .about-mission .mission-container h2 {
+  .choose-container {
     width: 100%;
   }
 
-  .about-mission .choose-container {
-    width: 100%;
+  #services {
+    padding: 20px;
   }
 
   .serv-container {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .extra-header .about-content .h1 {
-    font-size: 4rem;
+  .contact-address {
+    flex-direction: column;
   }
 
   #contact {
     padding: 20px;
   }
 
-  .contact-address {
-    flex-direction: column;
-  }
-
-  .contact-address .address {
+  .address {
     width: 100%;
-    padding: 10px;
   }
 
   .contact-form-input {
     width: 100%;
   }
 
-  .contact-form-input .form-btn {
-    width: 40%;
-  }
-
   .google-map {
     width: 100%;
-  }
-
-  .google-map iframe {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .img-back-content {
-    bottom: 10%;
-  }
-
-  .top-addon h1 {
-    font-size: 1.8rem;
-  }
-
-  .top-addon p {
-    font-size: 6px;
-  }
-
-  .addon-content img {
-    height: 160px;
-  }
-
-  #add-img-hide {
-    height: 120px;
-  }
-
-  #review {
-    padding: 20px;
-  }
-
-  .swiper-wrapper {
-    padding: 20px 0;
   }
 }
